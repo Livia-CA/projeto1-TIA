@@ -1,9 +1,10 @@
-function [doismaisAptos] = elitismo(vetor)
+function [doismaisAptos] = elitismo(populacao_dec)
   doismaisAptos = zeros(1,2);
+
   for i= 1:2
-    [valor, indice] = max(vetor);
+    [valor, indice] = max(populacao_dec);
     doismaisAptos(i) = indice;
-    vetor(indice) = 0;
+    populacao_dec(indice) = 0;
   endfor
 
 
