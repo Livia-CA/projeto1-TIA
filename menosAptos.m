@@ -1,10 +1,9 @@
-function [doismenosAptos] = menosAptos(vetor)
+function [doismenosAptos] = menosAptos(populacao)
   doismenosAptos = zeros(1,2);
   for i= 1:2
-    [valor, indice] = min(vetor);
+    [valor, indice] = min(populacao);
     doismenosAptos(i) = indice;
-    vetor(indice) = 100;
+    populacao(indice) = 100;
   endfor
-
 
 endfunction
