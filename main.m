@@ -24,6 +24,6 @@ for i=2:10
   melhor_da_geracao(i) = max(populacaoDec);
 endfor
 
-plot(melhor_da_geracao, zeros(1,10))
+plot((1:10), melhor_da_geracao)
 
 
