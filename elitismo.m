@@ -7,5 +7,4 @@ function [doismaisAptos] = elitismo(populacao_dec)
     populacao_dec(indice) = 0;
   endfor
 
-
 endfunction
